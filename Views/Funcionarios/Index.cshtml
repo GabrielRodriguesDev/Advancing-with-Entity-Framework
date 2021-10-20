@@ -1,0 +1,15 @@
+@model IEnumerable<Starting_with_the_entity_framework.Models.Funcionario> // Tipando a view dizenqo que desejo trabalharcom uma Lista (IEnumerable) de Funcionarios
+<h2>Funcionários</h2>
+<a href="/Funcionarios/Cadastrar" class="btn btn-primary"> Novo Funcionario</a>
+<hr>
+@foreach (var funcionario in Model)//Trabalhando com os dados passados pela controller
+{
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-action list-group-item-primary">Nome: @funcionario.Nome</li>
+        <li class="list-group-item">Salario: @funcionario.Salario</li>
+        <li class="list-group-item">CPF: @funcionario.Cpf</li>
+        <a href="/Funcionarios/Editar/@funcionario.Id" class="btn btn-primary">Editar</a>
+        <a href="/Funcionarios/Deletar/@funcionario.Id" class="btn btn-danger">Deletar</a>
+    </ul>
+    <hr>
+}

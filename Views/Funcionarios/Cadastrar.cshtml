@@ -1,0 +1,37 @@
+@model Starting_with_the_entity_framework.Models.Funcionario //Carregando o Model na View para poder tipar o formulario
+em um objeto
+<h2>Cadastro de funcionarios</h2>
+
+<form class="form-horizontal" asp-controller="Funcionarios" asp-action="Salvar" method="POST">
+
+
+    <input type="hidden" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+        asp-for="Id">
+
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+            asp-for="Nome">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Salario</span>
+        </div>
+        <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+            asp-for="Salario">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">CPF</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+            asp-for="Cpf">
+    </div>
+    <button type="submit" class="btn btn-outline-success">Cadastrar</button>
+    <button type="submit"  href="/Funcionarios" class="btn btn-outline-danger">Cancelar</button>
+</form>
