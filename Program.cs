@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Starting_with_the_entity_framework
+namespace Advancing_with_Entity_Framework
 {
     public class Program
     {

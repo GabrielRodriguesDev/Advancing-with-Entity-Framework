@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Starting_with_the_entity_framework.Models;
+using Advancing_with_Entity_Framework.Models;
 
-namespace Starting_with_the_entity_framework.Database
+namespace Advancing_with_Entity_Framework.Database
 {
     public class ApplicationDBContext: DbContext  // Ao herdar de DbContext eu deixo indico ao ASP.NET que essa é a minha classe de configuração do Entity FrameWork
     { 
@@ -23,5 +23,6 @@ namespace Starting_with_the_entity_framework.Database
         public DbSet<Funcionario> Funcionarios {get; set;} //Com isso o EF já sabe que deve criar uma tabela com base nessa classe.
         //O nome dela será o nome do atributo que nesse caso é Funcionarios;
 
+        public DbSet<Categoria> Categorias {get; set;}
     } 
 }

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Starting_with_the_entity_framework.Models;
+using Advancing_with_Entity_Framework.Models;
 
-namespace Starting_with_the_entity_framework.Controllers
+namespace Advancing_with_Entity_Framework.Controllers
 {
     public class HomeController : Controller
     {

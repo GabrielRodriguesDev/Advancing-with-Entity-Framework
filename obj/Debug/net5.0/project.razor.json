@@ -15616,7 +15616,7 @@
     ],
     "CSharpLanguageVersion": 900
   },
-  "RootNamespace": "Starting_with_the_entity_framework",
+  "RootNamespace": "Advancing_with_Entity_Framework",
   "Documents": [
     {
       "FilePath": "d:\\Technology\\Sistemas\\Gabriel\\ASPNET\\SchoolOfNet\\Advancing-with-Entity-Framework\\Views\\Funcionarios\\Index.cshtml",

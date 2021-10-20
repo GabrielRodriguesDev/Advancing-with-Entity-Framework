@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Starting_with_the_entity_framework": {
+    "Advancing_with_Entity_Framework": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

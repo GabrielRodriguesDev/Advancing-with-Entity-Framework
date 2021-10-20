@@ -1,4 +1,4 @@
-namespace Starting_with_the_entity_framework.Models
+namespace Advancing_with_Entity_Framework.Models
 {
     public class Funcionario
     { 

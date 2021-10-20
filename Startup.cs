@@ -4,9 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Starting_with_the_entity_framework.Database;
+using Advancing_with_Entity_Framework.Database;
 
-namespace Starting_with_the_entity_framework
+namespace Advancing_with_Entity_Framework
 {
     public class Startup
     {

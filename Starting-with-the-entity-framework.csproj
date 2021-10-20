@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>Starting_with_the_entity_framework</RootNamespace>  
+    <RootNamespace>Advancing_with_Entity_Framework</RootNamespace>  
   </PropertyGroup>
 
   <ItemGroup>

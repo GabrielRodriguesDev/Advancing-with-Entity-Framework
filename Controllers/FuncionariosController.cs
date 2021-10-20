@@ -1,9 +1,9 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Starting_with_the_entity_framework.Database;
-using Starting_with_the_entity_framework.Models;
+using Advancing_with_Entity_Framework.Database;
+using Advancing_with_Entity_Framework.Models;
 
-namespace Starting_with_the_entity_framework.Controllers
+namespace Advancing_with_Entity_Framework.Controllers
 {
     public class FuncionariosController: Controller
     {
