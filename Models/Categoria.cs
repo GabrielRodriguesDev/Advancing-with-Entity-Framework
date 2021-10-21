@@ -6,5 +6,8 @@ namespace Advancing_with_Entity_Framework.Models
 
         public string Nome { get; set; }
     
+        public override string ToString() {
+            return "Id: " + this.Id + " Nome: " + this.Nome;
+        }
     }
 }

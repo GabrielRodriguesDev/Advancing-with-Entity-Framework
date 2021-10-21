@@ -24,5 +24,8 @@ namespace Advancing_with_Entity_Framework.Database
         //O nome dela será o nome do atributo que nesse caso é Funcionarios;
 
         public DbSet<Categoria> Categorias {get; set;}
+
+
+        public DbSet<Produto> Produtos {get; set;}
     } 
 }
