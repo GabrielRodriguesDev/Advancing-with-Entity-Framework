@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Advancing_with_Entity_Framework.Models;
 using Advancing_with_Entity_Framework.Database;
+using Microsoft.EntityFrameworkCore;
 
 namespace Advancing_with_Entity_Framework.Controllers
 {
@@ -77,7 +78,7 @@ namespace Advancing_with_Entity_Framework.Controllers
 
         public IActionResult Relacionamento() { // Criando registro com relacionamento.
 
-                
+                /* Criando objeto (registro no BD) com relacionamento 
                 Produto produtoOne = new Produto();
                 produtoOne.Nome = "Prd1";
                 produtoOne.Categoria = this._database.Categorias.First(categoria => categoria.Id == 1); //Temos que recuperar os dados do objeto e setar jutamente ao registro.
@@ -96,10 +97,25 @@ namespace Advancing_with_Entity_Framework.Controllers
                 this._database.Add(produtoTwo);
                 this._database.Add(produtoThree);
 
-                this._database.SaveChanges();
+                this._database.SaveChanges(); */
 
 
 
+                /*Relacionamento 1 PARA 1
+                //Para que o EF consiga trazer as informações FK informações do relacionamento do registro é necessário usar o método include, caso o contrario os campos com relacionamento retornaram null.
+                var listaDeProdutos = this._database.Produtos.Include(produto => produto.Categoria).ToList(); 
+
+
+                listaDeProdutos.ForEach(produto => {
+                    Console.WriteLine(produto.ToString());
+                }); */
+
+                /*Relacionamento 1 PARA Muitos */
+                var listaDeProdutosDeUmaCategoria = this._database.Produtos.Include(p => p.Categoria).Where(p => p.Categoria.Id == 2).ToList(); // Recuperando todos os produtos que pertençam a categoria 1
+                
+                listaDeProdutosDeUmaCategoria.ForEach(produto => {
+                    Console.WriteLine(produto.ToString());
+                });
                 return Content("Relacionamento");
             }
     }
