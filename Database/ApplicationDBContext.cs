@@ -27,5 +27,14 @@ namespace Advancing_with_Entity_Framework.Database
 
 
         public DbSet<Produto> Produtos {get; set;}
+
+
+        //Usando a Fluent API para poder fazer configurações refenrete ao BD, essas configs são renderizadas no momento do migration
+        protected override void OnModelCreating(ModelBuilder modelBuilder){
+            modelBuilder.Entity<Produto>().ToTable("GabrielProdutos")
+            modelBuilder.Entity<Produto>().Property(p => p.Nome).HasMaxLength(100); //Deixando o campo nome da tabela produto com o maximo de 100 caracteres.   
+        }
+
+
     } 
-}
+}   
